@@ -1,3 +1,107 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style-type: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 body{
-    background-color: aqua;
+    background-color: #000;
+    font-family: 'Nothing You Could Do', cursive;
+    color: ghostwhite;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.header__title{
+    text-transform: uppercase;
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+.header__text-question{
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.header__text-choose{
+    font-size: 40px;
+}
+
+.btn__choose{
+    text-align: center;
+    margin-top: -100px;
+}
+
+.btn{
+    background-color: transparent;
+    border: 1px solid ghostwhite;
+    padding: 30px 30px;
+    margin-left: 70px;
+}
+
+.btn:hover{
+    border: none;
+    scale: 1.1;
+    transition: .8s ease;
+    box-shadow: 0px 0px 0px 1px white, inset 0px 0px 0px 1px white, 0px 0px 20px 4px white,inset 0px 0px 20px 4px white;
+    
+}
+
+.btn img{
+    width: 150px;
+}
+
+.footer {
+    padding-bottom: 30px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.footer__inner-user {
+}
+
+.footer__inner-computer {
 }
