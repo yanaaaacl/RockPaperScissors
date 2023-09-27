@@ -1,34 +1,37 @@
-html{
+html {
     box-sizing: border-box;
 }
 
-*, *::after, *::before{
+*,
+*::after,
+*::before {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-html, body{
+html,
+body {
     height: 100%;
 }
 
-.wrapper{
+.wrapper {
     min-height: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
-body{
+body {
     background-color: #000;
     font-family: 'Nothing You Could Do', cursive;
     color: ghostwhite;
@@ -36,55 +39,55 @@ body{
     font-size: 25px;
 }
 
-.container{
+.container {
     max-width: 1200px;
     padding: 0 10px;
     margin: 0 auto;
 }
 
-.header{
+.header {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
 
 }
 
-.header__title{
+.header__title {
     text-transform: uppercase;
     font-size: 50px;
     padding-bottom: 30px;
 }
 
-.header__text-question{
+.header__text-question {
     font-size: 30px;
     padding-bottom: 30px;
 }
 
-.header__text-choose{
+.header__text-choose {
     font-size: 40px;
 }
 
-.btn__choose{
+.btn__choose {
     text-align: center;
     margin-top: -100px;
 }
 
-.btn{
+.btn {
     background-color: transparent;
     border: 1px solid ghostwhite;
     padding: 30px 30px;
     margin-left: 70px;
 }
 
-.btn:hover{
+.btn:hover {
     border: none;
     scale: 1.1;
     transition: .8s ease;
-    box-shadow: 0px 0px 0px 1px white, inset 0px 0px 0px 1px white, 0px 0px 20px 4px white,inset 0px 0px 20px 4px white;
-    
+    box-shadow: 0px 0px 0px 1px white, inset 0px 0px 0px 1px white, 0px 0px 20px 4px white, inset 0px 0px 20px 4px white;
+
 }
 
-.btn img{
+.btn img {
     width: 150px;
 }
 
@@ -100,8 +103,46 @@ body{
     text-transform: uppercase;
 }
 
-.footer__inner-user {
+.text__win {
+    display: none;
 }
 
-.footer__inner-computer {
+.text__bad-luck {
+    display: none;
+}
+
+.btn__try-again {
+    display: none;
+    
+}
+
+.text__true {
+    display: block;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.text__false {
+    display: block;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    
+}
+
+.btn__try-again--active {
+    display: block;
+    padding: 20px 20px;
+    background-color: darkgrey;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Nothing You Could Do', cursive;
+
+}
+
+.game__over {
+    display: none;
 }
